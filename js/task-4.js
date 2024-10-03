@@ -1,6 +1,6 @@
 "use strict";
 
-function getTotalBalanceByGender(users, gender){
+const getTotalBalanceByGender = (users, gender) => {
   return users
     .filter(user => user.gender === gender)
     .reduce((total, obj) => total + obj.balance, 0);
