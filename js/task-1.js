@@ -1,6 +1,6 @@
 "use strict";
 
-function getUserNames(users) {
+const getUserNames = users => {
   return users.map(user => user.name);
 }
 
